@@ -23,10 +23,10 @@ public class AppSettings {
 			Object obj = parser.parse(new FileReader("cfg/settings.json"));
 			JSONObject jsonObject = (JSONObject) obj;
 			JSONArray languajesArray = (JSONArray) jsonObject.get("LanguagesArray");
-//			Iterator iterator = languajesArray.iterator();
-//			while (iterator.hasNext()) {
-//				System.out.println(iterator.next());
-//			}
+			Iterator iterator = languajesArray.iterator();
+			while (iterator.hasNext()) {
+				System.out.println(iterator.next());
+			}
 
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
